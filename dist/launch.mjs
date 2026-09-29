@@ -1,0 +1,2 @@
+const clamp=v=>Math.max(0,Math.min(1,v));
+export function launchState(age){const rise=clamp((age-3)/13),door=clamp((age-16)/4),release=clamp((age-20)/5),unfold=clamp((age-25)/6);return {active:age>=0&&age<38,stage:age<3?'Ignition':age<16?'Ascent':age<20?'Payload doors opening':age<25?'Satellite separation':age<31?'Solar arrays unfolding':'Satellite deployed',height:rise*rise*780,door:door*100,separation:release*65,unfold:unfold*90,progress:clamp(age/38)};}

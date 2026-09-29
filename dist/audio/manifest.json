@@ -1,0 +1,47 @@
+{
+  "description": "Original synthesized compositions for the 0.4.0 prototype; replaces the earlier rejected soundtrack",
+  "tracks": [
+    {
+      "file": "city.mp3",
+      "seconds": 33.168,
+      "bytes": 398349,
+      "sha256": "fef2dcae6e74328917629c351a0ce535134322aec2edf1c604dc078b128082cf"
+    },
+    {
+      "file": "major.mp3",
+      "seconds": 31.032,
+      "bytes": 372717,
+      "sha256": "8efeb4d6b86f85bbaa8c57f4c19474af81ac5f585c8fdf5a856149fbac473628"
+    },
+    {
+      "file": "megacity.mp3",
+      "seconds": 49.296,
+      "bytes": 591885,
+      "sha256": "a2f1e70722197291d5990f7ecc093859eb0ced0df3ec393abc77f840959547a8"
+    },
+    {
+      "file": "metropolis.mp3",
+      "seconds": 43.704,
+      "bytes": 524781,
+      "sha256": "c2d50a48dc57408d1000f76374637c7f4b3e6a84f055f6608153aef2a435aaea"
+    },
+    {
+      "file": "settlement.mp3",
+      "seconds": 43.704,
+      "bytes": 524781,
+      "sha256": "6abc6b92e5218b9afda261662898b18472f8794b2cb81617316668238df1cc06"
+    },
+    {
+      "file": "town.mp3",
+      "seconds": 36.984,
+      "bytes": 444141,
+      "sha256": "8105e421ac483fde1fdb7322a666b95b330da923f3c456f9d06db26f2ea8549b"
+    },
+    {
+      "file": "village.mp3",
+      "seconds": 31.368,
+      "bytes": 376749,
+      "sha256": "ffe4647a4f85660bb4a187c55430e23439cd89ac8b61cf654e54368ef92dec32"
+    }
+  ]
+}

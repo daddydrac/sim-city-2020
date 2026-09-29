@@ -1,0 +1,116 @@
+{
+  "packages": [
+    {
+      "package": "react",
+      "version": "18.2.0",
+      "licenseSource": "https://unpkg.com/react@18.2.0/LICENSE"
+    },
+    {
+      "package": "react-dom",
+      "version": "18.2.0",
+      "licenseSource": "https://unpkg.com/react-dom@18.2.0/LICENSE"
+    },
+    {
+      "package": "redux",
+      "version": "4.2.1",
+      "licenseSource": "https://unpkg.com/redux@4.2.1/LICENSE.md"
+    },
+    {
+      "package": "react-redux",
+      "version": "8.1.3",
+      "licenseSource": "https://unpkg.com/react-redux@8.1.3/LICENSE.md"
+    },
+    {
+      "package": "react-is",
+      "version": "18.2.0",
+      "licenseSource": "https://unpkg.com/react-is@18.2.0/LICENSE"
+    },
+    {
+      "package": "styled-components",
+      "version": "6.1.8",
+      "licenseSource": "https://unpkg.com/styled-components@6.1.8/LICENSE"
+    },
+    {
+      "package": "maplibre-gl",
+      "version": "3.6.2",
+      "licenseSource": "https://unpkg.com/maplibre-gl@3.6.2/LICENSE.txt"
+    },
+    {
+      "package": "kepler.gl",
+      "version": "3.1.0",
+      "licenseSource": "https://unpkg.com/kepler.gl@3.1.0/LICENSE"
+    },
+    {
+      "package": "deck.gl",
+      "version": "8.9.36",
+      "licenseSource": "https://unpkg.com/deck.gl@8.9.36/LICENSE"
+    },
+    {
+      "package": "@luma.gl/core",
+      "version": "8.5.21",
+      "licenseSource": "https://unpkg.com/@luma.gl/core@8.5.21/LICENSE"
+    },
+    {
+      "package": "@loaders.gl/i3s",
+      "version": "3.4.15",
+      "licenseSource": "https://unpkg.com/@loaders.gl/i3s@3.4.15/LICENSE"
+    }
+  ],
+  "files": [
+    {
+      "file": "city-loaders.min.js",
+      "sha256": "9a9dd1049c634b20d81daeb5677d8c26f221ca2e956e0820930ff75e55b430d4",
+      "bytes": 155124
+    },
+    {
+      "file": "city-luma.min.js",
+      "sha256": "5416bd560552e072d793ddd4ad5feea302e9dc9bb12432eb4c619fe7ef6e74b8",
+      "bytes": 24893
+    },
+    {
+      "file": "deck.gl.min.js",
+      "sha256": "651ecd8b84598ca119c280952345c0998a4f03b951d796ab61877f79d546dc60",
+      "bytes": 1623945
+    },
+    {
+      "file": "keplergl.min.js",
+      "sha256": "ac46d9e74abf706657134cf8ff9dcb738fa4a364d2d5ec5982ac880fd10c79d0",
+      "bytes": 12787389
+    },
+    {
+      "file": "maplibre-gl.css",
+      "sha256": "731181d400d65a8b09d842f55b70bc4dc11010b15b8549e2c65a69d233fbdd2e",
+      "bytes": 63722
+    },
+    {
+      "file": "react-dom.min.js",
+      "sha256": "21758ed084cd0e37e735722ee4f3957ea960628a29dfa6c3ce1a1d47a2d6e4f7",
+      "bytes": 131882
+    },
+    {
+      "file": "react-is.min.js",
+      "sha256": "750a6877c8377a677d676448e67ab7e331a7c0844fa579286f7def02f8e2dab6",
+      "bytes": 2310
+    },
+    {
+      "file": "react-redux.min.js",
+      "sha256": "e4a5ccf9a740c5bd726fae2f752a1fe3558df797ce941bc131a49738b6ff7f42",
+      "bytes": 16104
+    },
+    {
+      "file": "react.min.js",
+      "sha256": "4b4969fa4ef3594324da2c6d78ce8766fbbc2fd121fff395aedf997db0a99a06",
+      "bytes": 10737
+    },
+    {
+      "file": "redux.min.js",
+      "sha256": "54574af2c55419f25dda6b62ba361fc7a4359146ccbb467c3473ca686a0347f7",
+      "bytes": 4332
+    },
+    {
+      "file": "styled-components.min.js",
+      "sha256": "a926892e3ad9977dc603c993d824774809b1fd78dbc2675cecf3eda36fc3a5df",
+      "bytes": 30010
+    }
+  ]
+}
