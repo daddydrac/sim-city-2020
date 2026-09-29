@@ -1,0 +1,4 @@
+Default facade screenshot
+Phase ten and night captured
+Controls and day/night animation passed
+[]

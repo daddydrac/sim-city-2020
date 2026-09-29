@@ -1,0 +1,10 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {createCity,analyze,build,serialize,deserialize} from '../dist/engine.mjs';
+import {inspectSite} from '../dist/sites.mjs';
+import {wearInfrastructure} from '../dist/economy.mjs';
+import {populationStage} from '../dist/audio.mjs';
+test('sector ledger reconciles, references stay live and rates persist',()=>{const c=createCity();c.finance.rates.residential=4;c.finance.rates.commercial=18;analyze(c);const sum=c.tiles.reduce((s,t)=>s+t.taxRevenue,0),l=c.metrics.ledger;assert.equal(sum,l.residential+l.commercial+l.industrial+l.tourism);assert.equal(l.total,l.residential+l.commercial+l.industrial+l.tourism+l.space+l.tolls+l.services);assert.equal(deserialize(serialize(c)).finance.rates.commercial,18);const f=c.finance;analyze(c);assert.equal(c.finance,f);});
+test('toll upgrade preserves connection and produces receipts',()=>{const c=createCity(),t=c.tiles.find(t=>t.type==='road'&&t.access);assert.ok(build(c,t.id,'toll').ok);assert.ok(t.access);assert.ok(t.tollRevenue>0);});
+test('wear is gradual, usage sensitive, repairable and persists',()=>{const c=createCity(),r=c.tiles.filter(t=>t.type==='road').slice(0,2);r[0].traffic=0;r[1].traffic=100;c.operations.maintenance=0;wearInfrastructure(c);assert.ok(r[1].condition<r[0].condition);assert.ok(r[1].condition>99);c.operations.maintenance=150;const before=r[0].condition;wearInfrastructure(c);assert.ok(r[0].condition>before);assert.equal(deserialize(serialize(c)).tiles[r[0].id].condition,r[0].condition);});
+test('every new destination places and survives a save',()=>{const c=createCity(false);c.cash=1e7;for(const type of ['mall','stripmall','hotel','casino','bank','mixeduse','ferris']){const t=c.tiles.find(t=>inspectSite(c,t.id,type).ok);assert.ok(build(c,t.id,type).ok);assert.equal(deserialize(serialize(c)).tiles[t.id].type,type);}});
+test('music stage boundaries',()=>{for(const [n,i]of [[0,0],[999,0],[1000,1],[10000,2],[50000,3],[100000,4],[500000,5],[1000000,6]])assert.equal(populationStage(n),i);});

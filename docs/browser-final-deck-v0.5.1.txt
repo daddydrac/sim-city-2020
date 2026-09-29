@@ -1,0 +1,5 @@
+deck random regeneration changes seed, terrain and both previews
+deck seed replay and invalid seed validation passed
+deck actual game rendered chosen terrain, January 1900, zero population
+deck autosave survives browser reload
+deck PASS: no browser errors

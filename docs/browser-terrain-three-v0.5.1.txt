@@ -1,0 +1,8 @@
+three random regeneration changes seed, terrain and both previews
+three seed replay and invalid seed validation passed
+all 12 selectable landscapes render distinct terrain
+survey modes and terrain sliders passed
+starter preview toggle is reversible
+three actual game rendered chosen terrain, January 1900, zero population
+three autosave survives browser reload
+three PASS: no browser errors

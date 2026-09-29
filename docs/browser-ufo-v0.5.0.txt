@@ -1,0 +1,8 @@
+Game loaded
+Visit started
+Beam reached
+Screenshot captured
+MID {"time":9.938799999999814,"target":{"x":15.87,"y":10.86,"z":0,"tileId":335},"camera":{"longitude":-122.41943511811351,"latitude":37.770435606938754,"zoom":14.714088447590484,"pitch":50.02429042688014,"bearing":-31.965993402367797,"dragRotate":true,"maxZoom":20,"minZoom":8,"transitionDuration":0}}
+10-second completion and exact camera restoration passed
+Skip passed
+ERRORS []
