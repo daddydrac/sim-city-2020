@@ -1,6 +1,6 @@
 # Sim City 2020 — v0.5.1
 
-Extract the entire ZIP. Open a terminal in this folder and run:
+Open a terminal in this folder and run:
 
     docker compose up --build -d
 
